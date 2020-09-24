@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Forms</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./forms.css">
+    </head>
+    <body>
+        <main>
+            <h2>Please fill out this sales form</h2>
+            
+            <form action="https://formspree.io/xzbkbwza" method="POST">
+                <label>
+                    Sales Date:
+                    <input type="date" id="date" name="date" />
+                </label><br>
+
+                <label>
+                    Category:
+                    <select name="category" >
+                        <option value="Sports" name="category">Sports</option>
+                        <option value="Kitchen" name="category"> Kitchen</option>
+                        <option value="Fashion" name="category"> Fashion</option>
+                        <option value="Books" name="category"> Books</option>
+                    </select>
+                </label><br>
+
+                <label>
+                    Products:
+                    <input type="text" id="products" name="products" />
+                </label><br>
+
+                <label>
+                    Unit sold: <br>
+                    <input type="radio" id="units" name="units" /> Kgs <br>
+                    <input type="radio" id="units" name="units" /> Pounds <br>
+                    <input type="radio" id="units" name="units" /> stone <br>
+                </label>
+                
+                <label>
+                    Profit: <br>
+                    <input type="number" id="profit" name="profit" /> 
+                </label><br>
+                <!-- your other form fields go here -->
+
+                <button type="submit">Send</button>
+            </form>
+        </main>
+    </body>
+</html>
